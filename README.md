@@ -44,3 +44,28 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Install libraries
+
+npm install typescript-plugin-css-modules --save-dev
+
+Here are the files which are the configurations:
+
+- tsconfig.json
+
+- .vscode --> settings.json
+  {
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+  }
+
+- src/custom.d.ts
+  // For CSS
+  declare module '\*.css' {
+  const css: {[key: string]: string}
+  export default css;
+  }
+
+- css --> module.css
+
+- import styles from './App.css';
