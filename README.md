@@ -48,6 +48,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Install libraries
 
 npm install typescript-plugin-css-modules --save-dev
+npm install antd @ant-design/icons
 
 Here are the files which are the configurations:
 
