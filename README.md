@@ -50,9 +50,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 npm install typescript-plugin-css-modules --save-dev
 npm install antd @ant-design/icons
 
-Here are the files which are the configurations:
+Here are the configuration files for TypeScript:
 
-- tsconfig.json
+- Setup tsconfig.json
 
 - .vscode --> settings.json
   {
