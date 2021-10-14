@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./App.module.css";
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { HomePage } from './pages'
+import { HomePage, RegisterPage, SignInPage, DetailPage } from './pages'
 
 
 function App() {
@@ -10,7 +10,9 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={HomePage}></Route>
-          <Route path="/signIn" render={() => <h1>登陆页面</h1>}></Route>
+          <Route path="/signin" component={SignInPage}></Route>
+          <Route path="/register" component={RegisterPage}></Route>
+          <Route path="/detail/:touristRouteId" component={DetailPage} />
           <Route render={() => <h1>404 not found</h1>}></Route>
         </Switch>
       </BrowserRouter>
