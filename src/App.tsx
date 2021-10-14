@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./App.module.css";
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { HomePage } from './pages'
 
 
@@ -8,7 +8,11 @@ function App() {
   return (
     <div className={styles.App}>
       <BrowserRouter>
-        <Route path="/" component={HomePage}></Route>
+        <Switch>
+          <Route exact path="/" component={HomePage}></Route>
+          <Route path="/signIn" render={() => <h1>登陆页面</h1>}></Route>
+          <Route render={() => <h1>404 not found</h1>}></Route>
+        </Switch>
       </BrowserRouter>
     </div>
   );
