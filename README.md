@@ -49,6 +49,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 npm install typescript-plugin-css-modules --save-dev
 npm install antd @ant-design/icons
+npm install @types/react-router-dom --save-dev
 
 Here are the configuration files for TypeScript:
 
